@@ -1,0 +1,7 @@
+# Batch files must keep CRLF: cmd.exe can misparse LF-only .bat files.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Binary assets.
+*.png binary
+*.exe binary

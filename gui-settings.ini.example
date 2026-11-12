@@ -1,0 +1,29 @@
+# DSH Remote - GUI settings template
+#
+# Copy this file to:
+#   %USERPROFILE%\.dsh\remote\gui-settings.ini
+#
+# The app reads/writes that file automatically. Do not put real tokens,
+# passwords or personal paths in this example file.
+
+# Taildrop device name used when sending the pairing link (e.g. your-phone).
+Device=
+
+# Bookkeeping written by the app.
+LastAction=
+LastUpdated=
+
+# Optional explicit DSH paths. Leave empty to auto-detect.
+# DshExe=C:\Program Files\DeepSeek Harness\DeepSeek Harness.exe
+# DshCli=C:\Program Files\DeepSeek Harness\resources\runtime\cli\bin\dsh.cmd
+DshExe=
+DshCli=
+
+# Bind address: "auto" = the Tailscale IPv4 of this PC.
+ListenHost=auto
+
+# Port used by the DSH web host.
+Port=8443
+
+# DSH profile used for the web host.
+Profile=web

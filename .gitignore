@@ -1,0 +1,75 @@
+# ---------------------------------------------------------------------------
+# Build output
+# ---------------------------------------------------------------------------
+/DSH Remote.exe
+/DSH Remote.new.exe
+/DSHRemote.build.exe
+*.exe
+*.pdb
+*.dll
+*.obj
+*.ilk
+*.exp
+*.lib
+
+# ---------------------------------------------------------------------------
+# Local backups / temporary files
+# ---------------------------------------------------------------------------
+*.bak
+*.bak-*
+*.old
+*.orig
+*.tmp
+*.temp
+~$*
+_*crop*.png
+
+# ---------------------------------------------------------------------------
+# Runtime data and personal settings (never commit)
+# ---------------------------------------------------------------------------
+# GUI settings live outside the repo, but ignore a copy if it is placed here.
+# Portable mode: runtime files (token URL, QR, logs, settings) go to data\ next
+# to the exe/scripts. Never commit that folder.
+/data/
+/scripts/data/
+gui-settings.ini
+gui-settings.ini.bak
+*.url.txt
+dsh-web-qr*.png
+dsh-web-qr-*.png
+dsh-web-pair-*.html
+dsh-web.log
+dsh-web.err.log
+dsh-web-stop.log
+gui.log
+*.credentials.yaml
+*credentials*
+*secret*
+.env
+.env.*
+secrets.*
+*.pfx
+*.pem
+*.key
+
+# The broad patterns above (e.g. *secret*) also match source files such as
+# winforms/SecretMask.cs (git on Windows ignores case). Always keep source.
+!/winforms/*.cs
+
+# ---------------------------------------------------------------------------
+# OS / IDE
+# ---------------------------------------------------------------------------
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.cache
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# ---------------------------------------------------------------------------
+# Local-only design copy (the sanitized one lives in docs/)
+# ---------------------------------------------------------------------------
+/ui-preview.png

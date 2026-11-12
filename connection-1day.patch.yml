@@ -1,0 +1,12 @@
+# Caps the web login cookie at 1 day.
+#
+# The `connection` row (plugin @deepseek-ai/dsh-client-connection) is defined in
+# the @deepseek-ai/dsh-web-app bundle. A patch REPLACES the row's whole config
+# instead of merging it, so `trustedHosts` must be restated exactly as in the
+# original bundle.
+#
+# Passed via: dsh --profile web --patch <this file> ...
+- id: connection
+  config:
+    trustedHosts: !!js ctx.webStartup.trustedHosts
+    cookieMaxAgeDays: 1
